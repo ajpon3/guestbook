@@ -1,1 +1,97 @@
-# guestbook
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophie's Guestbook 🍂</title>
+  
+  <!-- Cursive Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================================
+       Y2K FALL PALETTE
+       ========================================= */
+    :root {
+      --bg-color: #916931;       /* Warm Fall Brown Background */
+      --text-color: #ffd8a1;     /* Cream/Gold Text */
+      --card-bg: #725225;        /* Darker Accent Brown Container */
+      --border-color: #ffd8a1;   /* Golden Borders */
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Quicksand', sans-serif;
+      max-width: 680px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    /* Fall Banner Image */
+    .banner-img {
+      width: 100%;
+      height: auto;
+      max-height: 280px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 2px solid var(--border-color);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Container Card */
+    .card {
+      background-color: var(--card-bg);
+      border: 2px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 24px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Cursive Font Header */
+    h1.cursive-header {
+      font-family: 'Alex Brush', cursive;
+      font-size: 3.2rem;
+      text-align: center;
+      margin: 10px 0 5px 0;
+      color: var(--text-color);
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+
+    p.subtext {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    /* Embedded Guestbook Frame */
+    .guestbook-frame {
+      width: 100%;
+      height: 500px;
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BANNER HEADER -->
+  <img src="https://i.pinimg.com/1200x/3f/9a/c6/3f9ac6fc87c526ee27f9fa0e58157cf9.jpg" alt="Fall Aesthetic Banner" class="banner-img">
+
+  <!-- GUESTBOOK CARD -->
+  <div class="card">
+    <h1 class="cursive-header">📖 Sign My Guestbook</h1>
+    <p class="subtext">Leave a note or message before you go! ✨</p>
+    
+    <!-- Guestbook Embed Frame -->
+    <iframe src="https://www.smartgb.com/" class="guestbook-frame" title="Guestbook"></iframe>
+  </div>
+
+</body>
+</html>
